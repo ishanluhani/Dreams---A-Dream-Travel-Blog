@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+.intro-tab {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 90vh;
+}
+
+.logo {
+    margin-left: 2%;
+    width: 10%;
+}
+
+header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(50, 50, 50, .35);
+    height: 10%;
+}
+
+.topnav-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    gap: 2em;
+}
+
+.cnt {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+
+.topnav-main a, .cnt a {
+    font-family: "Montserrat", sans-serif;
+    float: left;
+    color: #f2f2f2;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    padding: 1.1em 1em;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all .3s;
+}
+
+.topnav-main a:hover, .cnt a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.Fuji-img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay-main {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: left;
+    align-self: center;
+
+    /* border-radius: 1em; */
+
+    margin: 10em;
+    width: 40vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-main h2 {
+    margin: .3em;
+    color: whitesmoke;
+    font-size: 5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.overlay-main p {
+    margin: 1em;
+    color: whitesmoke;
+    font-size: 1.7vw;
+}
+
+.show-more-japan {
+    display: block;
+    justify-self: center;
+    padding-top: 2em;
+}
+
+.show-more-japan a {
+    border: 2px solid rgb(255, 171, 67);
+    color: rgb(255, 171, 67);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    /* border-radius: .5em; */
+  }
+
+.show-more-japan a:hover {
+    background-color: rgb(255, 171, 67);
+    color: white;
+}
+
+.destination-heading {
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+    color: rgb(62, 42, 68);
+}
+
+.usp-sub h3 {
+    font-size: 2.5vh;
+    margin: 1.5vh 0;
+    /* margin-bottom: ; */
+}
+
+.usp-sub, .usp-sub img {
+    width: 20vw;
+    text-align: center;
+}
+
+.usp-main {
+    justify-self: center;
+}
+
+.usp-sub {
+    margin: 0 2vw;
+    /* padding: 5vh 2vw; */
+    display: inline-block;
+    background-color: white;
+    /* border: 2px solid #ccc; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: .3s;
+}
+
+.usp-sub:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.usp-main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.usp-content {
+    padding: 2px 16px;
+}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <title>Dreams</title>
+</head>
+
+<body>
+
+    <div class="intro-tab">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="topnav-main">
+                <a class="active" href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#about">About</a>
+                <a href="#blogs">Blogs</a>
+            </div>
+            <div class="cnt">
+                <a href="#contact">Contact</a>
+            </div>
+        </header>
+
+        <img src="wmremove-transformed.jpeg" alt="Mt. Fuji" class="Fuji-img" />
+
+        <div class="overlay-main">
+            <h2>Japan</h2>
+            <p>Japan combines futuristic elements with tradition. It offers a rare feeling of beauty, achievements in
+                technologies along with the safety and the ethical society. This certainly is a place worth visiting.
+            </p>
+            <div class="show-more-japan"><a href="#" class="button">Show More</a></div>
+        </div>
+
+    </div>
+
+    <h1 class="destination-heading">Why Japan?</h1>
+
+    <div class="usp-main">
+
+        <span class="usp-sub">
+            <img src="history-img.jpg" alt="History">
+            <div class="usp-content">
+                <h3>History</h3>
+                <p>I am fascinated by samurai and want to learn about Japan's warrior past, as well as Bushido.</p>
+            </div>
+        </span>
+
+        <span class="usp-sub">
+            <img src="technology-img.jpeg" alt="Technology">
+            <div class="usp-content">
+                <h3>Technology</h3>
+                <p>As a tech enthusiast, I'm excited to experience Japan's innovations in robotics and bullet trains.</p>
+            </div>
+        </span>
+
+        <span class="usp-sub">
+            <img src="food-img.jpeg" alt="Food">
+            <div class="usp-content">
+                <h3>Food</h3>
+                <p>I am attracted to Japanese cuisine's unique flavors, beautiful presentation, and fresh ingredients.
+                </p>
+            </div>
+        </span>
+
+    </div>
+    <br><br><br><br>
+</body>
+
+</html>
