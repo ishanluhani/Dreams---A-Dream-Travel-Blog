@@ -128,13 +128,13 @@ header {
 #destination-heading {
     margin-top: 5vh;
     text-align: center;
-    font-size: minmax(16px, 3em);
+    font-size: max(16px, 3em);
     font-weight: 600;
     color: rgb(62, 42, 68);
 }
 
 .usp-sub h3 {
-    font-size: minmax(16px, 2.5vh);
+    font-size: max(16px, 2.5vh);
     margin: 1.5vh 0;
     /* margin-bottom: ; */
 }
